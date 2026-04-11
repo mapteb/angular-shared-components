@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #e9e9e9;
+      font-family: Arial, sans-serif;
+    }
+
+    .panel {
+      width: 480px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #d9d9d9;
+      padding: 10px 14px;
+    }
+
+    .panel-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .panel-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #555;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0 2px;
+      border-radius: 3px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .panel-close:hover {
+      background: #bbb;
+      color: #111;
+    }
+
+    .panel-body {
+      background-color: #fff;
+      padding: 20px;
+      min-height: 160px;
+      color: #444;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel" id="panel">
+    <div class="panel-header">
+      <span class="panel-title">Panel Title</span>
+      <button class="panel-close" onclick="document.getElementById('panel').style.display='none'" title="Close">&#x2715;</button>
+    </div>
+    <div class="panel-body">
+      <p>This is the body area of the panel. Place your content here.</p>
+    </div>
+  </div>
+</body>
+</html>

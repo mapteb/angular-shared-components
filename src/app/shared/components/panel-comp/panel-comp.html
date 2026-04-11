@@ -1,0 +1,20 @@
+<!-- <div>
+    <div class="panel-header">
+        <span>{{title()}}
+        <app-close-widget (canClose)="emitClosePanel()"></app-close-widget>
+        </span>
+    </div>
+    <div class="panel-content">
+        <p>This is the content of the panel.</p>
+    </div>
+</div> -->
+
+  <div class="panel" id="panel">
+    <div class="panel-header">
+      <span class="panel-title">{{title()}}</span>
+      <app-close-widget (canClose)="emitClosePanel()"></app-close-widget>
+    </div>
+    <div class="panel-body">
+      <p>Panel body text.</p>
+    </div>
+  </div>

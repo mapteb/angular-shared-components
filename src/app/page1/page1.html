@@ -1,0 +1,8 @@
+<p>page1 works!</p>
+
+@if (isPanelVisible) {
+  <app-panel-comp 
+    [title]="'Page1 Panel'" 
+    (openerCanClose)="closePanel()"> 
+  </app-panel-comp>
+}
