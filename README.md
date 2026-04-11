@@ -11,5 +11,5 @@ The shared compents are:
 1. Various views of the application embed the Panel component and the Panel component in-turn embeds the Close component.
 2. The views embedding the Panel can customeize the style set in the Panel component.
 
-A demo of these features can be seen [here](https://github.com/mapteb).
+A demo of these features can be seen [here](https://mapteb.github.io/angular-shared-components/).
 
