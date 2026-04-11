@@ -74,5 +74,8 @@
 
 app-panel-comp {
   --panel-width: 100%;
+  --icon-width: 15px;
+  --icon-height: 15px;
+  --icon-border: 1px solid #333;  
   margin-top: 200px;
 }

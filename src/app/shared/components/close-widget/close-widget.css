@@ -1,5 +1,6 @@
 .clsicon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;    
+    width: var(--icon-width, 20px);
+    height: var(--icon-height, 20px);
+    border: var(--icon-border, none);
+    cursor: pointer;
 }
