@@ -10,7 +10,6 @@ import { CloseWidget } from '../close-widget/close-widget';
 export class PanelComp {
   
   title = input<string>(''); // using input() function to define an input property
-  panelBodyText = input<string>('Panel body text placeholder.');  
   openerCanClose = output<void>(); // using output() function to define an output property  
 
   emitClosePanel() {

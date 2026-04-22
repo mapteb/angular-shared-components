@@ -3,7 +3,6 @@
 @if (isPanelVisible) {
   <app-panel-comp 
     [title]="'Page2 Panel'" 
-    [panelBodyText]="panelBodyText"
-    (openerCanClose)="closePanel()"> 
+    (openerCanClose)="closePanel()"> Panel body content from Page 2
   </app-panel-comp>
 }

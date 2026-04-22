@@ -15,6 +15,6 @@
       <app-close-widget (canClose)="emitClosePanel()"></app-close-widget>
     </div>
     <div class="panel-body">
-      <p>{{panelBodyText()}}</p>
+      <ng-content></ng-content>
     </div>
   </div>
