@@ -12,7 +12,9 @@
       <div class="menulbl"><a routerLink="/home/page1">Page 1</a><br></div>
       <div class="menulbl"><a routerLink="/home/page2">Page 2</a><br></div>
       @if (isPanelVisible) {
-      <app-panel-comp [title]="'Nav Panel'" (openerCanClose)="closePanel()">
+      <app-panel-comp [title]="'Nav Panel'" 
+      [panelBodyText]="panelBodyText"
+      (openerCanClose)="closePanel()">
       </app-panel-comp>
       }
     </div>

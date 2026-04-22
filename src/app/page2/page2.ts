@@ -10,6 +10,7 @@ import { PanelComp } from '../shared/components/panel-comp/panel-comp';
 })
 export class Page2 {
   isPanelVisible = true;
+  panelBodyText = 'Panel body text set by Page2 component.';
   constructor() {
     console.log('>> loading page2');
   }

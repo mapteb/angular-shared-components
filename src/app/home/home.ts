@@ -12,6 +12,7 @@ export class Home {
 
   isMenuVisible = true;
   isPanelVisible = true;
+  panelBodyText = 'Panel body text in the nav menu.';
 
   toggleLeftMenu() {
     this.isMenuVisible = !this.isMenuVisible;

@@ -1,6 +1,5 @@
-import { Component, EventEmitter, input, Input, OnDestroy, output, Output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { CloseWidget } from '../close-widget/close-widget';
-import { O } from '@angular/cdk/keycodes';
 
 @Component({
   selector: 'app-panel-comp',
@@ -9,9 +8,9 @@ import { O } from '@angular/cdk/keycodes';
   styleUrl: './panel-comp.css',
 })
 export class PanelComp {
-  //@Input() title: string = '';
+  
   title = input<string>(''); // using input() function to define an input property
-  // @Output() openerCanClose = new EventEmitter<void>();
+  panelBodyText = input<string>('Panel body text placeholder.');  
   openerCanClose = output<void>(); // using output() function to define an output property  
 
   emitClosePanel() {
